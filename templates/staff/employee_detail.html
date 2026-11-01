@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{{ employee.first_name }}{% endblock %}
+{% block content %}
+    <h2>{{ employee.last_name }} {{ employee.first_name }}</h2>
+    <p><strong>Пол:</strong> {{ employee.get_gender_display }}</p>
+    <p><strong>Навыки:</strong> {{ employee.skills }}</p>
+
+    <h3>Галерея (по порядку)</h3>
+    {% for img in images %}
+        <img src="{{ img.image.url }}" alt="Фото" style="width: 200px; margin: 10px;">
+    {% empty %}
+        <p>Фотографий пока нет.</p>
+    {% endfor %}
+{% endblock %}

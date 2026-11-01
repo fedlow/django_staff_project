@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Список сотрудников{% endblock %}
+{% block content %}
+    <h2>Все сотрудники</h2>
+    {% for employee in employees %}
+        {% include 'staff/_employee_card.html' %}
+    {% endfor %}
+{% endblock %}

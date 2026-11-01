@@ -1,0 +1,19 @@
+# Виртуальное окружение
+venv/
+env/
+
+# Python кэш
+__pycache__/
+*.pyc
+
+# База данных
+db.sqlite3
+
+# Медиа и статика (пользовательские файлы)
+media/
+staticfiles/
+
+# Настройки IDE и системы
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,4 @@
+<div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 10px;">
+    <h3><a href="{% url 'employee_detail' employee.pk %}">{{ employee.last_name }} {{ employee.first_name }}</a></h3>
+    <p><strong>Навыки:</strong> {{ employee.skills }}</p>
+</div>
